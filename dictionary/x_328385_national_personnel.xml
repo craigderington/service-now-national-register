@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="personnel" max_length="40" name="x_328385_national_personnel" type="collection">
+        <element label="age" max_length="40" name="age" type="integer"/>
+        <element label="city" max_length="255" name="city" type="string"/>
+        <element label="Date of birth" max_length="40" name="date_of_birth" type="glide_date"/>
+        <element label="email" max_length="255" name="email" type="string"/>
+        <element label="First name" max_length="255" name="first_name" type="string"/>
+        <element label="Gender" max_length="10" name="gender" type="string"/>
+        <element label="Last name" max_length="255" name="last_name" type="string"/>
+        <element label="nationality" max_length="50" name="nationality" type="string"/>
+        <element label="phone" max_length="20" name="phone" type="string"/>
+        <element label="seed" max_length="255" name="seed" type="string"/>
+        <element label="state" max_length="50" name="state" type="string"/>
+        <element label="Street address" max_length="255" name="street_address" type="string"/>
+        <element label="title" max_length="255" name="title" type="string"/>
+        <element label="Zip code" max_length="20" name="zip_code" type="string"/>
+    </element>
+</database>

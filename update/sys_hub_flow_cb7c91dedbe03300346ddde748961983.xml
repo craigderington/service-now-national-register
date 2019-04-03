@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Grabs a random user from Random User</description>
+        <internal_name>get_a_random_user</internal_name>
+        <label_cache>null</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Get a Random User</name>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-03 17:49:06</sys_created_on>
+        <sys_id>cb7c91dedbe03300346ddde748961983</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get a Random User</sys_name>
+        <sys_package display_value="National Register" source="x_328385_national">e7e9599adbe03300346ddde7489619db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="National Register">e7e9599adbe03300346ddde7489619db</sys_scope>
+        <sys_update_name>sys_hub_flow_cb7c91dedbe03300346ddde748961983</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-03 17:49:06</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=cb7c91dedbe03300346ddde748961983"/>
+    <sys_variable_value action="delete_multiple" query="document_key=cb7c91dedbe03300346ddde748961983"/>
+</record_update>
