@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
     <sys_app_module action="INSERT_OR_UPDATE">
         <active>true</active>
-        <application display_value="Personnel">48ab999edbe03300346ddde7489619e5</application>
+        <application display_value="National Register">48ab999edbe03300346ddde7489619e5</application>
         <assessment/>
         <content_page/>
         <device_type/>
@@ -25,17 +25,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>80ab999edbe03300346ddde7489619e8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>personnels</sys_name>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Personnel</sys_name>
         <sys_overrides/>
         <sys_package display_value="National Register" source="x_328385_national">e7e9599adbe03300346ddde7489619db</sys_package>
         <sys_policy/>
         <sys_scope display_value="National Register">e7e9599adbe03300346ddde7489619db</sys_scope>
         <sys_update_name>sys_app_module_80ab999edbe03300346ddde7489619e8</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-03 17:45:21</sys_updated_on>
+        <sys_updated_on>2019-04-04 15:09:00</sys_updated_on>
         <timeline_page/>
-        <title>personnels</title>
+        <title>Personnel</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>
