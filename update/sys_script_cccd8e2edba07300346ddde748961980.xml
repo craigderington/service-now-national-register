@@ -61,9 +61,9 @@
 		gs.info('x_REST_MESSAGE_NATIONAL_328385 POST Success: ' + u_first_name + ' ' + u_last_name + ' age: ' + u_age + ' phone: ' + u_phone);
 		
 	}
-	catch(err) {
+	catch (err) {
 		var message = err.message;
-		gs.info('x_REST_MESSAGE_NATIONAL_328385 returned error: ' + err);
+		gs.info('x_REST_MESSAGE_NATIONAL_328385 returned error: ' + message);
 	}
 
 })(current, previous);]]></script>
@@ -73,7 +73,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cccd8e2edba07300346ddde748961980</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>SendRandomUserData</sys_name>
         <sys_overrides/>
         <sys_package display_value="National Register" source="x_328385_national">e7e9599adbe03300346ddde7489619db</sys_package>
@@ -81,7 +81,7 @@
         <sys_scope display_value="National Register">e7e9599adbe03300346ddde7489619db</sys_scope>
         <sys_update_name>sys_script_cccd8e2edba07300346ddde748961980</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-06 18:05:51</sys_updated_on>
+        <sys_updated_on>2019-04-08 14:21:30</sys_updated_on>
         <template/>
         <when>before</when>
     </sys_script>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Get Random Person Count</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period>1970-01-01 01:00:00</run_period>
+        <run_start>2019-04-08 14:00:00</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>periodically</run_type>
+        <script><![CDATA[// call the MID server to get the current count on Persons
+(function () {
+
+	try { 
+		var r = new sn_ws.RESTMessageV2('x_328385_national.Get Person Count', 'Default GET');
+
+		//override authentication profile 
+		//authentication type ='basic'/ 'oauth2'
+		//r.setAuthenticationProfile(authentication type, profile name);
+
+		//set a MID server name if one wants to run the message on MID
+		r.setMIDServer('CRAIG-DEV2');
+
+		//if the message is configured to communicate through ECC queue, either
+		//by setting a MID server or calling executeAsync, one needs to set skip_sensor
+		//to true. Otherwise, one may get an intermittent error that the response body is null
+		r.setEccParameter('skip_sensor', true);
+
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+
+		// parse the response
+		respObj = JSON.parse(responseBody);
+		totalPersons = respObj.total_persons;
+		gs.info("x_REST_NATL_REG_COUNT: " + totalPersons);
+
+	}
+	catch(ex) {
+	    var message = ex.getMessage();
+		gs.info("x_NATL_REG_MIDSERVER Error: " + message);
+	}
+})();
+
+
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-08 14:17:14</sys_created_on>
+        <sys_id>6e7a9ebbdb603300346ddde74896192b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Get Random Person Count</sys_name>
+        <sys_package display_value="National Register" source="x_328385_national">e7e9599adbe03300346ddde7489619db</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="National Register">e7e9599adbe03300346ddde7489619db</sys_scope>
+        <sys_update_name>sysauto_script_6e7a9ebbdb603300346ddde74896192b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-08 15:16:06</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
