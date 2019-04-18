@@ -42,7 +42,7 @@
 	}
 	catch(ex) {
 	    var message = ex.getMessage();
-		gs.info("x_NATL_REG_MIDSERVER Error: " + message);
+		gs.info("x_REST_NATL_REG_MIDSERVER Error: " + message);
 	}
 })();
 
@@ -52,14 +52,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-04-08 14:17:14</sys_created_on>
         <sys_id>6e7a9ebbdb603300346ddde74896192b</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Get Random Person Count</sys_name>
         <sys_package display_value="National Register" source="x_328385_national">e7e9599adbe03300346ddde7489619db</sys_package>
         <sys_policy/>
         <sys_scope display_value="National Register">e7e9599adbe03300346ddde7489619db</sys_scope>
         <sys_update_name>sysauto_script_6e7a9ebbdb603300346ddde74896192b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-08 15:16:06</sys_updated_on>
+        <sys_updated_on>2019-04-18 13:41:58</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
