@@ -3,15 +3,15 @@
         <active>true</active>
         <condition/>
         <conditional>false</conditional>
-        <name>GetRandomUserEvery10Minutes</name>
+        <name>GetRandomUserEvery30Minutes</name>
         <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
         <run_as_tz/>
         <run_dayofmonth>1</run_dayofmonth>
         <run_dayofweek>1</run_dayofweek>
-        <run_period>1970-01-01 00:02:00</run_period>
+        <run_period>1970-01-01 00:30:00</run_period>
         <run_start>2019-04-18 13:13:06</run_start>
         <run_time>1970-01-01 08:00:00</run_time>
-        <run_type>periodically</run_type>
+        <run_type>on_demand</run_type>
         <script><![CDATA[(function () {
 	try { 
 		// call the get random user rest message
@@ -52,14 +52,12 @@
 			gr.nationality = respObj.results[0].nat;
 			gr.gender = respObj.results[0].gender;
 			gr.seed = respObj.info.seed;
-			gs.info("Random user seed: " + current.seed);
+			gs.info("Random user seed: " + gr.seed);
 
 			// insert record
 			sysId = gr.insert();
-			gs.info("x_REST_NATL_REG :: Added Random User record: " + gr.seed);
-			
-			gs.info("x_REST_NATL_REG :: Completed scheduled script execution.  New record ID: " + sysId);	
-			return sysId;			
+			gs.info("x_REST_NATL_REG :: Added Random User record: " + sysId);	
+						
 			
 		} else {
 		    // send to debug log  
@@ -77,14 +75,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-04-18 13:32:39</sys_created_on>
         <sys_id>5e2d298bdb707300346ddde74896196a</sys_id>
-        <sys_mod_count>11</sys_mod_count>
-        <sys_name>GetRandomUserEvery10Minutes</sys_name>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>GetRandomUserEvery30Minutes</sys_name>
         <sys_package display_value="National Register" source="x_328385_national">e7e9599adbe03300346ddde7489619db</sys_package>
         <sys_policy/>
         <sys_scope display_value="National Register">e7e9599adbe03300346ddde7489619db</sys_scope>
         <sys_update_name>sysauto_script_5e2d298bdb707300346ddde74896196a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-18 14:01:47</sys_updated_on>
+        <sys_updated_on>2019-05-15 20:26:47</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
