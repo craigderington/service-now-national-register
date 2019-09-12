@@ -9,7 +9,7 @@
         <label>REST step</label>
         <order>1</order>
         <outputs/>
-        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <step_type display_value="">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_class_name>sys_hub_step_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-04-03 19:08:38</sys_created_on>

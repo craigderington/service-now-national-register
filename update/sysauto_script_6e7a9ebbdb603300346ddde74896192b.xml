@@ -11,7 +11,7 @@
         <run_period>1970-01-01 00:15:00</run_period>
         <run_start>2019-04-08 14:00:00</run_start>
         <run_time>1970-01-01 08:00:00</run_time>
-        <run_type>periodically</run_type>
+        <run_type>on_demand</run_type>
         <script><![CDATA[// call the MID server to get the current count on Persons
 (function () {
 
@@ -52,14 +52,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-04-08 14:17:14</sys_created_on>
         <sys_id>6e7a9ebbdb603300346ddde74896192b</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>Get Random Person Count</sys_name>
         <sys_package display_value="National Register" source="x_328385_national">e7e9599adbe03300346ddde7489619db</sys_package>
         <sys_policy/>
         <sys_scope display_value="National Register">e7e9599adbe03300346ddde7489619db</sys_scope>
         <sys_update_name>sysauto_script_6e7a9ebbdb603300346ddde74896192b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-05-31 20:35:27</sys_updated_on>
+        <sys_updated_on>2019-09-12 20:16:31</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>
